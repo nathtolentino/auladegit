@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Aula 06</title>
+    </head>
+    <body>
+        <header>
+            <h1>Aula 06</h1>
+            <hr />
+            <br />
+        </header>
+        <main>
+            <!-- utilizando o elemento form -->
+            <form method="post" action="mailto:nathaliatpereira@hotmail.com">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required />
+                <label for="sNome">Sobrenome:</label>
+                <input type="text" id="sNome" />
+                <br /><br />
+                <label for="email">E-mail:</label>
+                <input
+                    type="email"
+                    id="email"
+                    size="57"
+                    placeholder="exemplodeemail@exemplo.com.br"
+                />
+                <br /><br />
+                <hr />
+                <!-- utilizando o elemento radio -->
+                <h2>Destino da Viagem</h2>
+                <input type="radio" name="dn" id="dn" />
+                <label for="op1"> Destino Nacional </label><br />
+                <input type="radio" name="di" id="di" />
+                <label for="op2"> Destino Internacional</label> <br />
+                <br />
+                <hr />
+                <!-- utilizando o elemento checkbox -->
+                <h2>Locais para as primeiras viagens</h2>
+                <input type="checkbox" name="op1" id="op1" />
+                <label for="op1">Arraial do Cabo</label> <br />
+                <input type="checkbox" name="op2" id="op2" />
+                <label for="op2">Maragogi</label> <br />
+                <input type="checkbox" name="op3" id="op3" />
+                <label for="op3">Pipa</label> <br />
+                <input type="checkbox" name="op4" id="op4" />
+                <label for="op4">Florianópolis</label><br />
+                <input type="checkbox" name="op5" id="op5" />
+                <label for="op5">Cancun</label><br />
+                <input type="checkbox" name="op6" id="op6" />
+                <label for="op6">Miami</label><br />
+                <input type="checkbox" name="op7" id="op7" />
+                <label for="op7">Alaska</label><br />
+                <input type="checkbox" name="op8" id="op8" />
+                <label for="op8">Londres</label><br />
+                <hr />
+                <!-- utilizando o elemento select -->
+                <h2>Forma de Pagamento</h2>
+                <select name="fPagamento" id="fPagamento">
+                    <option value="fp0" disabled selected>
+                        Escolha uma opção
+                    </option>
+                    <option value="fp1">Cartão de Crédito</option>
+                    <option value="fp2">Cartão de Débito</option>
+                    <option value="fp3">Pix</option>
+                    <option value="fp4">Cheque</option>
+                    <option value="fp5">Boleto</option></select
+                ><br />
+                <br />
+                <hr />
+                <!-- utilizando o elemento datalist -->
+                <label for="cCid">Escolha sua cidade</label>
+                <input
+                    autocomplete="on"
+                    nome="cid"
+                    id="cid"
+                    list="cidade"
+                    placeholder="Sua cidade"
+                />
+                <datalist id="cidade">
+                    <option value="São Paulo"></option>
+                    <option value="Guarulhos"></option>
+                    <option value="Campinas"></option>
+                    <option value="São Caetano do Sul"></option>
+                    <option value="Santo André"></option></datalist
+                ><br />
+                <br />
+                <hr />
+                <!-- usando o elemento range -->
+                0
+                <input type="range" name="vlr1" id="vlr1" />
+                10
+                <br />
+                <hr />
+                <textarea
+                    name="sugestao"
+                    id="sg1"
+                    cols="30"
+                    rows="10"
+                    placeholder="Deixe seu comentário aqui."
+                    required
+                ></textarea>
+                <br /><br />
+                <!-- botão enviar -->
+                <input type="submit" value="Enviar" />
+            </form>
+        </main>
+    </body>
+</html>
